@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %} Home page {% endblock %}
+
+{% block nav_item %}
+<li class="nav-item">
+    <a class="nav-link" href="{{ url_for('catalog.catalog') }}">Catalog</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="{{ url_for('auth.login') }}">Login</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="{{ url_for('auth.register') }}">Register</a>
+</li>
+{% endblock %}
+
+
+{% block content %}{% endblock %}
